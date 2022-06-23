@@ -37,14 +37,18 @@ or docker image:
 wget -O hypermapper_lite.tar.gz https://www.dropbox.com/s/zawzvfebnj6jxps/hypermapper_lite.tar.gz?dl=0
 ```
 
+```
+docker load < hypermapper_lite.tar.gz
+```
+
 # Usage examples
 ### singularity
 ```
 singularity run \
 
-  --bind <indir>:/indir \
+  --bind <in_dir>:/indir \
   
-  --bind <outdir>:/outdir
+  --bind <out_dir>:/outdir
 
   --pwd / \
 
@@ -62,15 +66,12 @@ singularity run \
 ```
 
 ### or docker
-``` 
-docker load < hypermapper_lite.tar.gz
-```
 ```
 docker run \
 
-  -v <indir>:/indir \
+  -v <in_dir>:/indir \
   
-  -v <outdir>:/outdir \
+  -v <out_dir>:/outdir \
 
   hypermapper_lite \
 
@@ -87,9 +88,9 @@ docker run \
 
 ### where:
 ```
-  <indir> : directory containing input T1 and FLAIR e.g. $(pwd)
+  <in_dir> : directory containing input T1 and FLAIR e.g. $(pwd)
 
-  <outdir> : directory to write output e.g. $(pwd)
+  <out_dir> : directory to write output e.g. $(pwd)
 
   <sif_dif> : directory containing singularity image (if using)
 
