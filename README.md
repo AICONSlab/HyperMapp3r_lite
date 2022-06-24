@@ -1,7 +1,7 @@
 # HyperMapp3r_lite
 
 - segments white matter hyperintensities (WMHs) using T1/FLAIR
-- streamlined version of HyperMapp3r (https://github.com/AICONSlab/HyperMapp3r) for command line segmentation of WMHs
+- streamlined version of HyperMapp3r (https://github.com/AICONSlab/HyperMapp3r) for command line segmentation of WMHs with updated model weights
 
 # Inputs
 masked, bias corrected, coregistered T1 and FLAIR images
